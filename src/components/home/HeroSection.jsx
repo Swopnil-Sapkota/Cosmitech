@@ -8,7 +8,7 @@ const HeroSection = () => {
       <div className="max-w-8xl px-6 md:px-12 mx-auto h-full grid grid-cols-1 md:grid-cols-[60%_40%] items-center">
         
         {/* LEFT CONTENT */}
-        <div className="z-10 pl-0 md:pl-10">
+        <div className="z-10 pl-0 md:pl-20">
           <h1 className="text-[32px] md:text-[40px] font-normal text-[#1A1A1A] max-w-4xl text-center">
             Dermatologist-Approved Solutions <br />
             for Every Skin Type
