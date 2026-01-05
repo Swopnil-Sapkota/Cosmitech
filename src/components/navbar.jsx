@@ -8,13 +8,13 @@ const Navbar = () => {
 
   return (
     <nav className="w-full bg-[#FDFDFD]">
-      <div className="max-w-8xl mx-auto flex items-center justify-between px-16 md:px-20 h-[80px]">
+      <div className="max-w-8xl mx-auto flex items-center justify-between px-16 md:px-20 h-20">
         {/* Logo */}
         <Link to="/" className="flex items-center">
           <img
             src={logoImg}
             alt="Cosmitech Logo"
-            className="block w-[63px] h-[54px] object-contain"
+            className="block w-15.75 h-13.5 object-contain"
           />
         </Link>
 
