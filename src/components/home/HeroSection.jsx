@@ -1,21 +1,20 @@
-import React from "react";
 import heroImg from "../../assets/home/hero.png";
 
 const HeroSection = () => {
   return (
-    <section className="w-full bg-[linear-gradient(180deg,_#FDF2F8_61.06%,_#FFF1F2_88.46%,_#FEF2F2_99.52%)] relative overflow-hidden h-[446px]">
+    <section className="w-full bg-[linear-gradient(180deg,#FDF2F8_61.06%,#FFF1F2_88.46%,#FEF2F2_99.52%)] relative overflow-hidden h-111.5">
 
       
       <div className="max-w-8xl px-6 md:px-12 mx-auto h-full grid grid-cols-1 md:grid-cols-[60%_40%] items-center">
         
         {/* LEFT CONTENT */}
-        <div className="z-10 pl-0 md:pl-10 md:pl-20">
+        <div className="z-10 pl-0 md:pl-10">
           <h1 className="text-[32px] md:text-[40px] font-normal text-[#1A1A1A] max-w-4xl text-center">
             Dermatologist-Approved Solutions <br />
             for Every Skin Type
           </h1>
 
-          <p className="mt-6 text-[14px] md:text-[16px] leading-[26px] md:leading-[28px] text-[#6B7280] px-2 md:px-0 max-w-4xl text-left md:ml-12 mx-auto md:mx-0">
+          <p className="mt-6 text-[14px] md:text-[16px] leading-6.5 md:leading-7 text-[#6B7280] px-2 md:px-0 max-w-4xl text-left md:ml-12 mx-auto md:mx-0">
             Explore clinically tested skincare products from Fixderma and FCL,
             explained simply for your skin needs
           </p>
@@ -38,10 +37,9 @@ const HeroSection = () => {
         <img
           src={heroImg}
           alt="Dermatology models"
-          className="w-[461px] h-[392px] object-contain"
+          className="w-115.25 h-98 object-contain"
         />
       </div>
-
     </section>
   );
 };
