@@ -1,16 +1,55 @@
-# React + Vite
+<!-- # Your Dream Skin Products
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align="center">
+  <img src="https://github.com/Eos-WebSolutions/Cosmitech_International/raw/main/public/CIPL.png" alt="CIPL Logo" width="200">
+</div>
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Technologies Used
 
-## React Compiler
+- **Frontend**: React, Tailwind CSS -->
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+# CIPL – Official Fix Derma Distributor in Nepal
 
-## Expanding the ESLint configuration
+<div align="center">
+  <img src="https://github.com/Eos-WebSolutions/Cosmitech_International/raw/main/public/CIPL.png" alt="CIPL Logo" width="180" />
+</div>
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+<p align="center">
+  <strong>Your Trusted Partner for Fix Derma Skincare Products in Nepal</strong>
+</p>
+
+---
+
+## 📌 About CIPL
+
+**CIPL (Cosmitech International Pvt. Ltd.)** is the official distributor of **Fix Derma** dermatologically tested skincare products in Nepal.  
+This website serves as a professional digital platform to showcase Fix Derma products, provide accurate product information, and support distributors, pharmacies, clinics, and customers across Nepal.
+
+The platform is designed with a clean, modern UI to reflect medical-grade skincare standards and brand credibility.
+
+---
+
+## 🌿 About Fix Derma
+
+**Fix Derma** is a globally recognized cosmeceutical brand developed by dermatologists.  
+Its products are formulated with scientifically proven ingredients and are suitable for sensitive, acne-prone, and medically treated skin.
+
+---
+
+## 🛠️ Technologies Used
+
+- **Frontend**: React.js  
+- **Styling**: Tailwind CSS  
+- **Build Tool**: Vite / CRA (as applicable)
+
+---
+
+## 🎯 Key Features
+
+- Professional product showcase
+- Clean and responsive user interface
+- Brand-focused medical skincare design
+- Distributor-focused informational website
+- Mobile, tablet, and desktop responsive layout
