@@ -58,7 +58,7 @@ export default function RightSolution() {
                         key={title}
                         className="group h-56 bg-white border border-gray-200 rounded-2xl p-8 flex flex-col items-center justify-center text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
                     >
-                        <div className="w-full h-full flex items-center justify-center rounded-full bg-gray-50 transition-transform duration-300 group-hover:scale-110 ">
+                        <div className="w-full h-full flex items-center justify-center rounded-full transition-transform duration-300 group-hover:scale-110 ">
                             <img
                                 src={image}
                                 alt={title}
