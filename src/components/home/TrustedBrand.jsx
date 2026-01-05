@@ -55,8 +55,8 @@ export default function TrustedBrand() {
             <div className="max-w-6xl mx-auto">
                 {/* Header Section */}
                 <div className="text-center mb-12 md:mb-16">
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-normal text-gray-900 mb-2 md:mb-4">Our Trusted Brands</h2>
-                    <p className="text-base md:text-lg text-[#7D7D7D]">Dermatology-focused skincare backed by science</p>
+                    <h2 className="text-[32px] md:text-[40px] lg:text-[40px]font-normal text-gray-900 mb-2 md:mb-4">Our Trusted Brands</h2>
+                    <p className="text-[14px] md:text-[16px] text-[#7D7D7D]">Dermatology-focused skincare backed by science</p>
                 </div>
 
                 {/* Brand Cards Grid */}
