@@ -1,7 +1,7 @@
 # Your Dream Skin Products
 
 <div align="center">
-  <img src="https://https://github.com/Eos-WebSolutions/Cosmitech_International/raw/main/public/CIPL.png" alt="CIPL Logo" width="200">
+  <img src="https://github.com/Eos-WebSolutions/Cosmitech_International/raw/main/public/CIPL.png" alt="CIPL Logo" width="200">
 </div>
 
 ---
