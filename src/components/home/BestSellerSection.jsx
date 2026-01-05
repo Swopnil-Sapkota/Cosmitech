@@ -59,7 +59,7 @@ const BestSellerSection = () => {
         </div>
 
         {/* Heading */}
-        <h2 className="text-center text-[22px] font-medium text-[#1B605C]">
+        <h2 className="text-center text-[24px] text-[#1B605C]">
           Best Seller Products
         </h2>
 
