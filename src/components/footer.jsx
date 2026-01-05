@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-6 sm:mb-8 md:mb-10 gap-6 sm:gap-8 md:gap-12">
           {/* Left Section */}
           <div className="lg:w-1/2 w-full">
-            <h2 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4 text-gray-900 leading-tight">
+            <h2 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl font-stretch-normal mb-3 md:mb-4 text-gray-900 leading-tight">
               Ready To Transform Your Skin?
             </h2>
             <p className="text-sm xs:text-base sm:text-lg text-gray-600 mb-4 md:mb-6 max-w-2xl">
@@ -47,7 +47,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 xs:gap-8 md:gap-12 lg:gap-52">
           {/* Quick Links */}
           <div className="flex flex-col">
-            <h3 className="font-bold text-base xs:text-lg mb-3 xs:mb-4 md:mb-6 text-gray-900">Quick Links</h3>
+            <h3 className="font-semibold text-base xs:text-lg mb-3 xs:mb-4 md:mb-6 text-gray-900">Quick Links</h3>
             <div className="grid grid-cols-2 gap-1 xs:gap-2">
               {['Home', 'Brands', 'Skin Concerns', 'Products', 'About Us', 'Contact'].map((link) => (
                 <a
@@ -63,7 +63,7 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div className="flex flex-col">
-            <h3 className="font-bold text-base xs:text-lg mb-3 xs:mb-4 md:mb-6 text-gray-900">Contact</h3>
+            <h3 className="font-semibold text-base xs:text-lg mb-3 xs:mb-4 md:mb-6 text-gray-900">Contact</h3>
             <address className="text-gray-600 not-italic text-xs xs:text-sm md:text-base space-y-1 xs:space-y-2 md:space-y-3">
               <p>Gophal Marg, Teku</p>
               <p>Kathmandu 44600, Nepal</p>
@@ -73,7 +73,7 @@ const Footer = () => {
 
           {/* Social Media */}
           <div className="flex flex-col">
-            <h3 className="font-bold text-base xs:text-lg mb-3 xs:mb-4 md:mb-6 text-gray-900">Follow us on</h3>
+            <h3 className="font-semibold text-base xs:text-lg mb-3 xs:mb-4 md:mb-6 text-gray-900">Follow us on</h3>
             <div className="flex flex-wrap gap-2 xs:gap-3 md:gap-4">
               {[
                 { icon: FaFacebook, color: 'hover:bg-blue-50 hover:text-blue-600' },

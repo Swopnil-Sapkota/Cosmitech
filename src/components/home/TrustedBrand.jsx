@@ -30,7 +30,7 @@ const BRANDS_DATA = [
         id: "fcl",
         logo: FCL,
         productImage: FCL2,
-        bgColor: "bg-gradient-to-r from-[#E0F3FF] to-[#66C5FF]",
+        bgColor: "bg-gradient-to-r from-[#E0F1FF] to-[#B8E4FF]",
         borderColor: "border-[#66C5FF]",
         titleColor: "text-gray-900",
         dotColor: "bg-[#00609A]",
@@ -47,7 +47,6 @@ const BRANDS_DATA = [
         ctaText: "View FCL Products",
         ctaLink: "#fcl",
     }
-
 ]
 
 export default function TrustedBrand() {
@@ -107,7 +106,6 @@ export default function TrustedBrand() {
                                 className={`${brand.linkColor} inline-flex items-center gap-2 font-medium text-sm md:text-base transition-all duration-200 group`}
                             >
                                 {brand.ctaText}
-
                             </a>
                         </article>
                     ))}
