@@ -10,26 +10,31 @@ const categories = [
     title: "Face Care",
     description: "Targeted care for healthy, radiant skin",
     icon: face,
+    url: "/fix-derma/face-care",
   },
   {
     id: 2,
     title: "Body Care",
     description: "Daily body care, dermatologist trusted",
     icon: body,
+    url: "/fix-derma/body-care",
   },
   {
     id: 3,
     title: "Lip Care",
     description: "Hydration and protection for your lips",
     icon: lip,
+    url: "/fix-derma/lip-care",
   },
   {
     id: 4,
     title: "Hair Care",
     description: "Solutions for scalp and hair health",
     icon: hair,
+    url: "/fix-derma/hair-care",
   },
 ];
+
 
 const ExploreCategories = () => {
   return (
