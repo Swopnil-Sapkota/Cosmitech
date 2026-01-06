@@ -10,7 +10,6 @@ const FixdermaPage = () => {
       <ExploreCategories />
       <FixDermaBest />
       <WhyChooseFixderma />
-
     </div>
   );
 };
