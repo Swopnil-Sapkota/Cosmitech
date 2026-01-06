@@ -31,13 +31,11 @@ const products = [
 
 const BestSellerSection = () => {
   return (
-    <section className="bg-white flex justify-center py-10">
-      
-      {/* MAIN FIGMA FRAME */}
+    <section className="bg-white flex justify-center py-10 px-4">
       <div
         className="
-          w-[1280px]
-          h-[675px]
+          w-full
+          lg:w-[1280px]
           border
           border-[#FEC2C3]
           rounded-[8px]
@@ -59,17 +57,27 @@ const BestSellerSection = () => {
         </div>
 
         {/* Heading */}
-        <h2 className="text-center text-[24px] text-[#1B605C]">
+        <h2 className="text-center text-[20px] sm:text-[22px] lg:text-[24px] text-[#1B605C]">
           Best Seller Products
         </h2>
 
-        <p className="text-center text-sm text-[#7D7D7D] max-w-2xl mx-auto">
+        <p className="text-center text-sm text-[#7D7D7D] max-w-2xl mx-auto px-2">
           Our top-rated products trusted by dermatologists and loved by
           customers worldwide
         </p>
 
-        {/* PRODUCTS ROW */}
-        <div className="flex gap-[12px] justify-between px-6 mt-2 ">
+        {/* PRODUCTS GRID */}
+        <div
+          className="
+            grid
+            grid-cols-1
+            sm:grid-cols-2
+            lg:grid-cols-3
+            gap-[12px]
+            justify-items-center
+            mt-4
+          "
+        >
           {products.map((product) => (
             <ProductCard key={product.id} {...product} />
           ))}
