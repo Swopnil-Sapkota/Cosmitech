@@ -9,6 +9,7 @@ const categories = [
     description: "Provide comprehensive product information and skincare education",
     icon: educate,
     iconBgColor: "bg-blue-100",
+    iconSize: "w-6 h-6", 
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ const categories = [
     description: "Feature only dermatologist-trusted and clinically proven brands",
     icon: support,
     iconBgColor: "bg-[#E6F0F9]",
+    iconSize: "w-6 h-6", 
   },
   {
     id: 3,
@@ -23,6 +25,7 @@ const categories = [
     description: "Help you make informed decisions about your skincare routine",
     icon: support,
     iconBgColor: "bg-[#FAFCF2]",
+    iconSize: "w-6 h-6", 
   },
   {
     id: 4,
@@ -30,6 +33,7 @@ const categories = [
     description: "Bridge the gap between dermatology and everyday skincare",
     icon: connect,
     iconBgColor: "bg-[#FBEAFD]",
+    iconSize: "w-6 h-6", 
   },
 ];
 
@@ -47,15 +51,13 @@ const WhatWeDo = () => {
               key={item.id} 
               className="bg-white rounded-xl p-6 flex flex-col items-center text-center gap-4 border border-gray-200 hover:border-[#FE9A9B] hover:shadow-sm transition-all duration-300"
             >
-              {/* Circle background with icon */}
-              <div className={`${item.iconBgColor} rounded-full p-4`}>
-                <div className="w-8 h-8 flex items-center justify-center">
-                  <img 
-                    src={item.icon} 
-                    alt={item.title}
-                    className="w-full h-full object-contain"
-                  />
-                </div>
+              {/* Circle background with icon - CONSTANT circle size */}
+              <div className={`${item.iconBgColor} rounded-full p-3 w-16 h-16 flex items-center justify-center`}>
+                <img 
+                  src={item.icon} 
+                  alt={item.title}
+                  className={`${item.iconSize} object-contain`} 
+                />
               </div>
 
               {/* Content */}
