@@ -2,7 +2,7 @@ import face from "../../assets/fixderma/FC.png";
 import body from "../../assets/fixderma/BC.png";
 import lip from "../../assets/fixderma/LC.png";
 import hair from "../../assets/fixderma/HC.png";
-import CategoryCard from "./CategoryCard";
+import FCLCategoryCard from "./CategoryCard";
 
 const categories = [
   {
@@ -31,18 +31,18 @@ const categories = [
   },
 ];
 
-const ExploreCategories = () => {
+const FCLExploreCategories = () => {
   return (
     <section className="w-full bg-white flex justify-center px-4 py-12">
       <div className="w-full lg:w-7xl flex flex-col gap-8">
         
         <h2 className="text-center text-[20px] sm:text-[24px] lg:text-[28px] text-[#1A1A1A]">
-          Explore Fixderma Products by Category
+          Explore FCL Products by Category
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {categories.map((item) => (
-            <CategoryCard key={item.id} {...item} />
+            <FCLCategoryCard key={item.id} {...item} />
           ))}
         </div>
       </div>
@@ -50,4 +50,4 @@ const ExploreCategories = () => {
   );
 };
 
-export default ExploreCategories;
+export default FCLExploreCategories;
