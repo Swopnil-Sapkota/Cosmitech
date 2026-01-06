@@ -9,7 +9,7 @@ const Navbar = () => {
   // Active link styles
   const activeStyle = "px-4 py-2 rounded-lg border border-red-300 text-[#FD4A4B] bg-red-50";
   const inactiveStyle = "hover:text-[#FD4A4B]";
-  
+
   // Mobile active link styles
   const mobileActiveStyle = "block px-4 py-3 rounded-lg bg-red-50 text-[#FD4A4B] font-medium";
   const mobileInactiveStyle = "block px-4 py-3 rounded-lg hover:bg-gray-100";
@@ -31,61 +31,61 @@ const Navbar = () => {
           <NavLink
             to="/"
             end
-            className={({ isActive }) => 
+            className={({ isActive }) =>
               isActive ? activeStyle : inactiveStyle
             }
           >
             Home
           </NavLink>
 
-          <NavLink 
-            to="/fix-derma" 
-            className={({ isActive }) => 
+          <NavLink
+            to="/fix-derma"
+            className={({ isActive }) =>
               isActive ? activeStyle : inactiveStyle
             }
           >
             Fix Derma
           </NavLink>
-          
-          <NavLink 
-            to="/fcl" 
-            className={({ isActive }) => 
+
+          <NavLink
+            to="/fcl"
+            className={({ isActive }) =>
               isActive ? activeStyle : inactiveStyle
             }
           >
             FCL
           </NavLink>
-          
-          <NavLink 
-            to="/products" 
-            className={({ isActive }) => 
+
+          <NavLink
+            to="/products"
+            className={({ isActive }) =>
               isActive ? activeStyle : inactiveStyle
             }
           >
             Products
           </NavLink>
-          
-          <NavLink 
-            to="/skin-concerns" 
-            className={({ isActive }) => 
+
+          <NavLink
+            to="/skin-concerns"
+            className={({ isActive }) =>
               isActive ? activeStyle : inactiveStyle
             }
           >
             Skin Concerns
           </NavLink>
-          
-          <NavLink 
-            to="/about" 
-            className={({ isActive }) => 
+
+          <NavLink
+            to="/about"
+            className={({ isActive }) =>
               isActive ? activeStyle : inactiveStyle
             }
           >
             About us
           </NavLink>
-          
-          <NavLink 
-            to="/contact" 
-            className={({ isActive }) => 
+
+          <NavLink
+            to="/contact"
+            className={({ isActive }) =>
               isActive ? activeStyle : inactiveStyle
             }
           >
@@ -107,7 +107,7 @@ const Navbar = () => {
               to="/"
               end
               onClick={() => setOpen(false)}
-              className={({ isActive }) => 
+              className={({ isActive }) =>
                 isActive ? mobileActiveStyle : mobileInactiveStyle
               }
             >
@@ -117,7 +117,7 @@ const Navbar = () => {
             <NavLink
               to="/fix-derma"
               onClick={() => setOpen(false)}
-              className={({ isActive }) => 
+              className={({ isActive }) =>
                 isActive ? mobileActiveStyle : mobileInactiveStyle
               }
             >
@@ -127,7 +127,7 @@ const Navbar = () => {
             <NavLink
               to="/fcl"
               onClick={() => setOpen(false)}
-              className={({ isActive }) => 
+              className={({ isActive }) =>
                 isActive ? mobileActiveStyle : mobileInactiveStyle
               }
             >
@@ -137,7 +137,7 @@ const Navbar = () => {
             <NavLink
               to="/products"
               onClick={() => setOpen(false)}
-              className={({ isActive }) => 
+              className={({ isActive }) =>
                 isActive ? mobileActiveStyle : mobileInactiveStyle
               }
             >
@@ -147,7 +147,7 @@ const Navbar = () => {
             <NavLink
               to="/skin-concerns"
               onClick={() => setOpen(false)}
-              className={({ isActive }) => 
+              className={({ isActive }) =>
                 isActive ? mobileActiveStyle : mobileInactiveStyle
               }
             >
@@ -157,7 +157,7 @@ const Navbar = () => {
             <NavLink
               to="/about"
               onClick={() => setOpen(false)}
-              className={({ isActive }) => 
+              className={({ isActive }) =>
                 isActive ? mobileActiveStyle : mobileInactiveStyle
               }
             >
@@ -167,7 +167,7 @@ const Navbar = () => {
             <NavLink
               to="/contact"
               onClick={() => setOpen(false)}
-              className={({ isActive }) => 
+              className={({ isActive }) =>
                 isActive ? mobileActiveStyle : mobileInactiveStyle
               }
             >
