@@ -1,3 +1,4 @@
+import FCLBestSeller from "../components/fcl/BestSeller";
 import FCLExploreCategories from "../components/fcl/ExploreCategory";
 import FclHeroSection from "../components/fcl/HeroSection";
 
@@ -6,6 +7,7 @@ const FclPage = () => {
     <div>
         <FclHeroSection/>
         <FCLExploreCategories />
+        <FCLBestSeller />
     </div>
   );
 };
