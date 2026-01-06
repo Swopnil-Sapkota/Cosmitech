@@ -1,7 +1,7 @@
 import acne from "../../assets/home/Acne.png";
 import pigmentation from "../../assets/home/Pigmentation.png";
 import dry from "../../assets/home/DrySkin.png";
-import sensi from "../../assets/home/Sensi.png";
+import sensi from "../../assets/home/sensi.png";
 import sun from "../../assets/home/sun.png";
 import aging from "../../assets/home/age.png";
 
