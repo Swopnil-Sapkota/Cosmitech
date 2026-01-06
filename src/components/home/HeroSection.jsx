@@ -2,7 +2,7 @@ import heroImg from "../../assets/home/hero.png";
 
 const HeroSection = () => {
   return (
-    <section className="w-full bg-[linear-gradient(180deg,#FDF2F8_61.06%,#FFF1F2_88.46%,#FEF2F2_99.52%)] relative overflow-hidden h-[500px] sm:h-[550px] md:h-[650px] lg:h-[446px] xl:h-[446px]">
+    <section className="w-full bg-[linear-gradient(180deg,#FDF2F8_61.06%,#FFF1F2_88.46%,#FEF2F2_99.52%)] relative overflow-hidden h-125 sm:h-137.5 md:h-162.5 lg:h-111.5 xl:h-111.5">
 
       <div className="max-w-screen-2xl px-4 sm:px-6 md:px-8 lg:px-12 mx-auto h-full grid grid-cols-1 lg:grid-cols-[60%_40%] items-center">
         
@@ -36,7 +36,7 @@ const HeroSection = () => {
         <img
           src={heroImg}
           alt="Dermatology models"
-          className="hidden lg:block w-[350px] xl:w-[461px] h-[300px] xl:h-[394px] object-contain"
+          className="hidden lg:block w-87.5 xl:w-115.25 h-75 xl:h-98.5 object-contain"
         />
         {/* Optional: Add a smaller mobile image if you have one */}
         {/* <img

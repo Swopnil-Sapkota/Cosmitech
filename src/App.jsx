@@ -15,7 +15,6 @@ function App() {
         <Route path="/fix-derma" element={<FixdermaPage />} />
         <Route path="/fcl" element={<FclPage />} />
         <Route path="/about" element={<AboutPage />} />
-
          <Route path="/fix-derma/face-care" element={<FaceCare />} />
       </Route>
     </Routes>
