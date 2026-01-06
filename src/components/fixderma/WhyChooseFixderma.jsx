@@ -31,7 +31,11 @@ const cardItems = [
   const WhyChooseFixderma = () => {
     return (
       <section className="w-full flex justify-center py-12 sm:py-14 md:py-16">
-        <div className="w-full max-w-[1280px] md:h-[529px] px-4 sm:px-6 md:px-[80px] rounded-[8px] bg-[#FDFDFD]">
+        <div className="w-full max-w-[1280px] md:h-[550px] sm:h-[770px] px-4 sm:px-6 md:px-[80px] rounded-[8px] bg-[#FDFDFD]"
+        style={{
+          boxShadow: "0 -4px 8px rgba(0,0,0,0.1), 0 4px 8px rgba(0,0,0,0.1)",
+        }}
+        >
           {/* Heading */}
           <h2 className="text-[22px] sm:text-[24px] md:text-[28px] font-normal text-center text-[#1A1A1A] mb-8 md:mb-12 mt-[18px]">
             Why To Choose Fixderma ?
