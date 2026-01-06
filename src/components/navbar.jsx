@@ -1,50 +1,96 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logoImg from "../assets/logo.png";
 import { IoMdClose, IoMdMenu } from "react-icons/io";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
+  // Active link styles
+  const activeStyle = "px-4 py-2 rounded-lg border border-red-300 text-[#FD4A4B] bg-red-50";
+  const inactiveStyle = "hover:text-[#FD4A4B]";
+  
+  // Mobile active link styles
+  const mobileActiveStyle = "block px-4 py-3 rounded-lg bg-red-50 text-[#FD4A4B] font-medium";
+  const mobileInactiveStyle = "block px-4 py-3 rounded-lg hover:bg-gray-100";
+
   return (
     <nav className="w-full bg-[#FDFDFD]">
       <div className="max-w-8xl mx-auto flex items-center justify-between px-16 md:px-20 h-20">
         {/* Logo */}
-        <Link to="/" className="flex items-center">
+        <NavLink to="/" className="flex items-center">
           <img
             src={logoImg}
             alt="Cosmitech Logo"
             className="block w-15.75 h-13.5 object-contain"
           />
-        </Link>
+        </NavLink>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8 text-lg font-normal text-black">
-          <Link
+          <NavLink
             to="/"
-            className="px-4 py-2 rounded-lg border border-red-300 text-[#FD4A4B] bg-red-50"
+            end
+            className={({ isActive }) => 
+              isActive ? activeStyle : inactiveStyle
+            }
           >
             Home
-          </Link>
+          </NavLink>
 
-          <Link to="/fix-derma" className="hover:text-[#FD4A4B]">
+          <NavLink 
+            to="/fix-derma" 
+            className={({ isActive }) => 
+              isActive ? activeStyle : inactiveStyle
+            }
+          >
             Fix Derma
-          </Link>
-          <Link to="/fcl" className="hover:text-[#FD4A4B]">
+          </NavLink>
+          
+          <NavLink 
+            to="/fcl" 
+            className={({ isActive }) => 
+              isActive ? activeStyle : inactiveStyle
+            }
+          >
             FCL
-          </Link>
-          <Link to="/products" className="hover:text-[#FD4A4B]">
+          </NavLink>
+          
+          <NavLink 
+            to="/products" 
+            className={({ isActive }) => 
+              isActive ? activeStyle : inactiveStyle
+            }
+          >
             Products
-          </Link>
-          <Link to="/skin-concerns" className="hover:text-[#FD4A4B]">
+          </NavLink>
+          
+          <NavLink 
+            to="/skin-concerns" 
+            className={({ isActive }) => 
+              isActive ? activeStyle : inactiveStyle
+            }
+          >
             Skin Concerns
-          </Link>
-          <Link to="/about" className="hover:text-[#FD4A4B]">
+          </NavLink>
+          
+          <NavLink 
+            to="/about" 
+            className={({ isActive }) => 
+              isActive ? activeStyle : inactiveStyle
+            }
+          >
             About us
-          </Link>
-          <Link to="/contact" className="hover:text-[#FD4A4B]">
+          </NavLink>
+          
+          <NavLink 
+            to="/contact" 
+            className={({ isActive }) => 
+              isActive ? activeStyle : inactiveStyle
+            }
+          >
             Contact
-          </Link>
+          </NavLink>
         </div>
 
         {/* Mobile Menu Button */}
@@ -57,61 +103,76 @@ const Navbar = () => {
       {open && (
         <div className="md:hidden bg-white shadow-sm">
           <div className="px-6 py-4 space-y-2 text-base font-normal text-black">
-            <Link
+            <NavLink
               to="/"
+              end
               onClick={() => setOpen(false)}
-              className="block px-4 py-3 rounded-lg bg-red-50 text-[#FD4A4B] font-medium"
+              className={({ isActive }) => 
+                isActive ? mobileActiveStyle : mobileInactiveStyle
+              }
             >
               Home
-            </Link>
+            </NavLink>
 
-            <Link
+            <NavLink
               to="/fix-derma"
               onClick={() => setOpen(false)}
-              className="block px-4 py-3 rounded-lg hover:bg-gray-100"
+              className={({ isActive }) => 
+                isActive ? mobileActiveStyle : mobileInactiveStyle
+              }
             >
               Fix Derma
-            </Link>
+            </NavLink>
 
-            <Link
+            <NavLink
               to="/fcl"
               onClick={() => setOpen(false)}
-              className="block px-4 py-3 rounded-lg hover:bg-gray-100"
+              className={({ isActive }) => 
+                isActive ? mobileActiveStyle : mobileInactiveStyle
+              }
             >
               FCL
-            </Link>
+            </NavLink>
 
-            <Link
+            <NavLink
               to="/products"
               onClick={() => setOpen(false)}
-              className="block px-4 py-3 rounded-lg hover:bg-gray-100"
+              className={({ isActive }) => 
+                isActive ? mobileActiveStyle : mobileInactiveStyle
+              }
             >
               Products
-            </Link>
+            </NavLink>
 
-            <Link
+            <NavLink
               to="/skin-concerns"
               onClick={() => setOpen(false)}
-              className="block px-4 py-3 rounded-lg hover:bg-gray-100"
+              className={({ isActive }) => 
+                isActive ? mobileActiveStyle : mobileInactiveStyle
+              }
             >
               Skin Concerns
-            </Link>
+            </NavLink>
 
-            <Link
+            <NavLink
               to="/about"
               onClick={() => setOpen(false)}
-              className="block px-4 py-3 rounded-lg hover:bg-gray-100"
+              className={({ isActive }) => 
+                isActive ? mobileActiveStyle : mobileInactiveStyle
+              }
             >
               About us
-            </Link>
+            </NavLink>
 
-            <Link
+            <NavLink
               to="/contact"
               onClick={() => setOpen(false)}
-              className="block px-4 py-3 rounded-lg hover:bg-gray-100"
+              className={({ isActive }) => 
+                isActive ? mobileActiveStyle : mobileInactiveStyle
+              }
             >
               Contact
-            </Link>
+            </NavLink>
           </div>
         </div>
       )}
