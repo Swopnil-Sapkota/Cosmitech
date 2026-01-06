@@ -1,6 +1,5 @@
 import { Routes, Route } from "react-router-dom";
 import MainLayout from "./layout/MainLayout";
-
 import HomePage from "./pages/homepage";
 import FixdermaPage from "./pages/FixDermaPage";
 import FclPage from "./pages/FclPage";
