@@ -23,6 +23,7 @@ const FclHeroSection = () => {
       >
         {/* LEFT CONTENT */}
         <div className="flex-1 text-center lg:text-left ml-10">
+          
           {/* HEADING */}
           <h1 className="text-[24px] sm:text-[26px] md:text-[28px] lg:text-[32px] leading-tight text-[#000000] max-w-xl mx-auto lg:mx-0">
             Face Care
