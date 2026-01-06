@@ -4,6 +4,7 @@ import MainLayout from "./layout/MainLayout";
 import HomePage from "./pages/homepage";
 import FixdermaPage from "./pages/fixdermapage";
 import FclPage from "./pages/FclPage";
+import AboutPage from "./pages/About";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/fix-derma" element={<FixdermaPage />} />
         <Route path="/fcl" element={<FclPage />} />
+        <Route path="/about" element={<AboutPage />} />
       </Route>
     </Routes>
   );
