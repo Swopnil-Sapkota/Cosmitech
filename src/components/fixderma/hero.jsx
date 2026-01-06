@@ -2,7 +2,7 @@ export default function Herofixderma() {
   return (
     <main className="w-full">
       {/* Hero Section */}
-      <section className="bg-gradient-to-b from-yellow-50 to-yellow-100 px-6 py-16 md:py-24">
+      <section className="bg-linear-to-r from-yellow-50 to-yellow-100 px-6 py-16 md:py-24">
         <div className="mx-auto max-w-7xl">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-12 items-center">
             {/* Left Content */}
