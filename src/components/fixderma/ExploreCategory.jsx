@@ -1,9 +1,8 @@
-import CategoryCard from "./CategoryCard";
-
 import face from "../../assets/fixderma/FC.png";
 import body from "../../assets/fixderma/BC.png";
 import lip from "../../assets/fixderma/LC.png";
 import hair from "../../assets/fixderma/HC.png";
+import CategoryCard from "./CategoryCard";
 
 const categories = [
   {
