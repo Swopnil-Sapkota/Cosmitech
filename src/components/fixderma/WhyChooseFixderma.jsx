@@ -30,10 +30,10 @@ const cardItems = [
   
   const WhyChooseFixderma = () => {
     return (
-      <section className="w-full flex justify-center py-12 sm:py-14 md:py-16 bg-[#FDFDFD]">
-        <div className="w-full max-w-[1280px] md:h-[529px] px-4 sm:px-6 md:px-[80px] rounded-[8px]">
+      <section className="w-full flex justify-center py-12 sm:py-14 md:py-16">
+        <div className="w-full max-w-[1280px] md:h-[529px] px-4 sm:px-6 md:px-[80px] rounded-[8px] bg-[#FDFDFD]">
           {/* Heading */}
-          <h2 className="text-[22px] sm:text-[24px] md:text-[28px] font-normal text-center text-[#1A1A1A] mb-8 md:mb-12">
+          <h2 className="text-[22px] sm:text-[24px] md:text-[28px] font-normal text-center text-[#1A1A1A] mb-8 md:mb-12 mt-[18px]">
             Why To Choose Fixderma ?
           </h2>
   
