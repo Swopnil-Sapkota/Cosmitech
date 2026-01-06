@@ -1,5 +1,3 @@
-import React from "react";
-
 const CategoryCard = ({ icon, title, description }) => {
   return (
     <div className="flex flex-col items-center text-center bg-white rounded-xl border border-[#E5E7EB] px-6 py-8 w-full hover:shadow-md transition">
@@ -12,7 +10,7 @@ const CategoryCard = ({ icon, title, description }) => {
         {title}
       </h3>
 
-      <p className="mt-2 text-[14px] text-[#6B7280] max-w-[220px]">
+      <p className="mt-2 text-[14px] text-[#6B7280] max-w-55">
         {description}
       </p>
     </div>
