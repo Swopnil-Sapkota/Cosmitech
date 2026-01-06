@@ -8,8 +8,8 @@ const FixdermaPage = () => {
     <div>
         <Herofixderma />
         <ExploreCategories />
-        <WhyChooseFixderma />
         <FixDermaBest />
+        <WhyChooseFixderma />
     </div>
   );
 };
