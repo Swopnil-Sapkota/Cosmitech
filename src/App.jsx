@@ -8,6 +8,7 @@ import FaceCare from "./pages/FaceCare";
 import SkinConcernPage from "./pages/SkinConcern";
 import BodyCare from "./pages/BodyCare";
 import AcnePage from "./pages/Acne";
+import PigmentationPage from "./pages/Pigmentation";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/fix-derma/body-care" element={<BodyCare />} />
         <Route path="/skin-concerns" element={<SkinConcernPage />} />
         <Route path="/skin-concerns/acne" element={<AcnePage />} />
+        <Route path="/skin-concerns/pigmentation" element={<PigmentationPage />} />
 
       </Route>
     </Routes>
