@@ -4,6 +4,7 @@ import dry from "../../assets/home/DrySkin.png";
 import sensi from "../../assets/home/Sensi.png";
 import aging from "../../assets/home/age.png";
 import sun from "../../assets/fixderma/facecare/sunscreen.png";
+import { FiArrowRight } from "react-icons/fi";
 
 const items = [
     {
@@ -47,12 +48,12 @@ const items = [
 export default function RightSolution({
     showHeader = true,
     showDescription = false,
+    showLearnMore = true,
     customTitle = "",
     customSubtitle = ""
 }) {
     return (
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
-
             {/* Header */}
             {showHeader && (
                 <div className="text-center mb-12">
@@ -70,31 +71,53 @@ export default function RightSolution({
                 {items.map(({ title, description, image, scale }) => (
                     <div
                         key={title}
-                        className={`group h-64 bg-white border border-gray-200 rounded-2xl p-8
-                            flex flex-col items-center text-center
-                            transition-all duration-300 hover:shadow-lg hover:-translate-y-1
-                            ${showDescription ? "justify-start" : "justify-center"}`}
+                        className={`group bg-white border border-gray-200 rounded-2xl p-6
+  flex flex-col items-center text-center
+  transition-all duration-300 hover:shadow-lg hover:-translate-y-1
+  ${showDescription ? "min-h-72 justify-start" : "h-64 justify-center"}`}
+
                     >
-                        {/* Icon */}
-                        <div className={`${showDescription ? "mb-4" : "mb-2"} h-20 w-20 flex items-center justify-center`}>
-                            <img
-                                src={image}
-                                alt={title}
-                                className="max-h-12 max-w-12 object-contain"
-                                style={{ transform: `scale(${scale})` }}
-                            />
+                        {/* Content container */}
+                        <div className="flex flex-col items-center w-full">
+                            {/* Icon */}
+                            <div className={`${showDescription ? "mb-4" : "mb-3"} h-20 w-20 flex items-center justify-center`}>
+                                <img
+                                    src={image}
+                                    alt={title}
+                                    className="max-h-12 max-w-12 object-contain"
+                                    style={{ transform: `scale(${scale})` }}
+                                />
+                            </div>
+
+                            {/* Title */}
+                            <h3 className="text-sm font-medium text-gray-800 mb-2">
+                                {title}
+                            </h3>
+
+                            {/* Description */}
+                            {/* Description */}
+                            {showDescription && description && (
+                                <p className="text-xs text-gray-500 leading-relaxed
+                                    min-h-14 md:min-h-18
+                                    line-clamp-3">
+                                    {description}
+                                </p>
+                            )}
+
                         </div>
 
-                        {/* Title */}
-                        <h3 className="text-sm font-medium text-gray-800">
-                            {title}
-                        </h3>
-
-                        {/* Description */}
-                        {showDescription && description && (
-                            <p className="mt-2 text-xs text-gray-500 leading-relaxed">
-                                {description}
-                            </p>
+                        {/* Learn More Button - Centered at bottom */}
+                        {showLearnMore && showDescription && (
+                            <div className="w-full flex justify-center mt-4 md:mt-0">
+                                <button className="text-[#FE9A9B] hover:text-[#FD7A7B]
+                                    font-medium text-xs md:text-sm
+                                    flex items-center gap-1
+                                    transition-colors duration-200
+                                    group/btn">
+                                    Learn more
+                                    <FiArrowRight className="w-4 h-4 transition-transform duration-200 group-hover/btn:translate-x-1" />
+                                </button>
+                            </div>
                         )}
                     </div>
                 ))}
