@@ -28,7 +28,7 @@ const items = [
         title: "Sensitive Skin",
         description: "Redness, irritation and reactive skincare.",
         image: sensi,
-        scale:3,
+        scale: 3,
     },
     {
         title: "Sun Protection",
@@ -67,15 +67,16 @@ export default function RightSolution({
 
             {/* Grid */}
             <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                {items.map(({ title, description, image,scale  }) => (
+                {items.map(({ title, description, image, scale }) => (
                     <div
                         key={title}
-                        className="group h-64 bg-white border border-gray-200 rounded-2xl p-8
-                       flex flex-col items-center text-center
-                       transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+                        className={`group h-64 bg-white border border-gray-200 rounded-2xl p-8
+                            flex flex-col items-center text-center
+                            transition-all duration-300 hover:shadow-lg hover:-translate-y-1
+                            ${showDescription ? "justify-start" : "justify-center"}`}
                     >
                         {/* Icon */}
-                        <div className="h-20 w-20 flex items-center justify-center mb-4">
+                        <div className={`${showDescription ? "mb-4" : "mb-2"} h-20 w-20 flex items-center justify-center`}>
                             <img
                                 src={image}
                                 alt={title}
