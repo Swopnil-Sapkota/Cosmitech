@@ -3,7 +3,7 @@ import faceImg from "../../../assets/fixderma/facecare/hero.png";
 
 const FaceCareHeroSection = () => {
   return (
-    <section className="w-full bg-white flex justify-center px-4 py-10">
+    <section className="w-full bg-white flex justify-center px-4 py-5">
       <div
         className="
     w-full

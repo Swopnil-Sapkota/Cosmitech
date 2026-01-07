@@ -3,7 +3,7 @@ import faceImg from "../../../assets/fixderma/bodycare/hero.png";
 
 const BodyCareHero = () => {
   return (
-    <section className="w-full bg-white flex justify-center px-4 py-10">
+    <section className="w-full bg-white flex justify-center px-4 py-5">
       <div
         className="
     w-full
@@ -25,7 +25,7 @@ const BodyCareHero = () => {
         <div className="flex-1 text-center lg:text-left ml-10">
           
           {/* HEADING */}
-          <h1 className="text-[24px] sm:text-[26px] md:text-[28px] lg:text-[32px] leading-tight text-[#000000] max-w-xl mx-auto lg:mx-0">
+          <h1 className="text-[24px] sm:text-[26px] md:text-[28px] lg:text-[32px] leading-tight text-[#1B605C] max-w-xl mx-auto lg:mx-0">
             Body Care
           </h1>
 
