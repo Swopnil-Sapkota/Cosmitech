@@ -35,17 +35,17 @@ const BestSellerSection = () => {
       <div
         className="
           w-full
-          lg:w-[1280px]
+          lg:w-7xl
           border
           border-[#FEC2C3]
-          rounded-[8px]
-          pt-[16px]
-          pr-[16px]
-          pb-[12px]
-          pl-[12px]
+          rounded-lg
+          pt-4
+          pr-4
+          pb-3
+          pl-3
           flex
           flex-col
-          gap-[16px]
+          gap-4
         "
       >
         {/* Badge */}
@@ -73,7 +73,7 @@ const BestSellerSection = () => {
             grid-cols-1
             sm:grid-cols-2
             lg:grid-cols-3
-            gap-[12px]
+            gap-3
             justify-items-center
             mt-4
           "

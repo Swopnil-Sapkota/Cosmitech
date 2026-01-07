@@ -6,10 +6,10 @@ import WhyChooseFixderma from "../components/fixderma/WhyChooseFixderma.jsx";
 const FixdermaPage = () => {
   return (
     <div>
-        <Herofixderma />
-        <ExploreCategories />
-        <WhyChooseFixderma />
-        <FixDermaBest />
+      <Herofixderma />
+      <ExploreCategories />
+      <FixDermaBest />
+      <WhyChooseFixderma />
     </div>
   );
 };

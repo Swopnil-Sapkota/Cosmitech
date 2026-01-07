@@ -10,33 +10,38 @@ const categories = [
     title: "Face Care",
     description: "Targeted care for healthy, radiant skin",
     icon: face,
+    url: "/fix-derma/face-care",
   },
   {
     id: 2,
     title: "Body Care",
     description: "Daily body care, dermatologist trusted",
     icon: body,
+    url: "/fix-derma/body-care",
   },
   {
     id: 3,
     title: "Lip Care",
     description: "Hydration and protection for your lips",
     icon: lip,
+    url: "/fix-derma/lip-care",
   },
   {
     id: 4,
     title: "Hair Care",
     description: "Solutions for scalp and hair health",
     icon: hair,
+    url: "/fix-derma/hair-care",
   },
 ];
+
 
 const ExploreCategories = () => {
   return (
     <section className="w-full bg-white flex justify-center px-4 py-12">
       <div className="w-full lg:w-7xl flex flex-col gap-8">
         
-        <h2 className="text-center text-[20px] sm:text-[24px] lg:text-[28px] text-[#1A1A1A] font-medium">
+        <h2 className="text-center text-[20px] sm:text-[24px] lg:text-[28px] text-[#1A1A1A]">
           Explore Fixderma Products by Category
         </h2>
 
