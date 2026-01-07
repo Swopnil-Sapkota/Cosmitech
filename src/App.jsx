@@ -21,6 +21,7 @@ function App() {
         <Route path="/fix-derma/body-care" element={<BodyCare />} />
         <Route path="/skin-concerns" element={<SkinConcernPage />} />
         <Route path="/skin-concerns/acne" element={<AcnePage />} />
+
       </Route>
     </Routes>
   );
