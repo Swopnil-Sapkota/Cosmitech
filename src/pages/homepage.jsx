@@ -12,7 +12,7 @@ const HomePage = () => {
       <TrustedBrands/>
       <BestSellerSection/>
       <NewLaunched/>
-      <RightSolution />
+      <RightSolution/>
       <WhyCosmitech />
     </div>
   );

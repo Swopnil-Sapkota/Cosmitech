@@ -2,7 +2,7 @@ import RightSolution from "../home/RightSolution";
 const ConcernHero = () => {
     return (
         <section className="bg-white">
-            <div className="max-w-7xl mx-auto px-4 py-10 md:py-12">
+            <div className="max-w-7xl mx-auto px-4 pt-10 -mb-2 md:-mb-1 md:pt-12">
                 <div className="flex flex-col items-center justify-center">
                     {/* Text Content */}
                     <div className="lg:w-1/2">
@@ -17,9 +17,9 @@ const ConcernHero = () => {
                 </div>
             </div>
             <RightSolution
+                showDescription={true}
                 showHeader={false}
-                showButton={true}
-                buttonText="Browse All Solutions" />
+                showButton={true} />
         </section>
     );
 };
