@@ -23,7 +23,6 @@ function App() {
         <Route path="/skin-concerns" element={<SkinConcernPage />} />
         <Route path="/skin-concerns/acne" element={<AcnePage />} />
         <Route path="/skin-concerns/pigmentation" element={<PigmentationPage />} />
-
       </Route>
     </Routes>
   );
