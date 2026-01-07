@@ -24,7 +24,7 @@ const steps = [
   },
 ];
 
-const DailyFaceCareRoutine = () => {
+const DailyCareRoutine = () => {
   return (
     <section className="w-full bg-white py-12 px-4">
       <div className="max-w-7xl mx-auto rounded-xl p-6 md:p-10 border border-[#E5E7EB] shadow-sm">
@@ -67,4 +67,4 @@ const DailyFaceCareRoutine = () => {
   );
 };
 
-export default DailyFaceCareRoutine;
+export default DailyCareRoutine;

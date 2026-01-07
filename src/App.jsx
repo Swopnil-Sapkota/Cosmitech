@@ -6,6 +6,7 @@ import FclPage from "./pages/FclPage";
 import AboutPage from "./pages/About";
 import FaceCare from "./pages/FaceCare";
 import SkinConcernPage from "./pages/SkinConcern";
+import BodyCare from "./pages/BodyCare";
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
         <Route path="/fcl" element={<FclPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/fix-derma/face-care" element={<FaceCare />} />
+        <Route path="/fix-derma/face-care" element={<FaceCare />} />
+        <Route path="/fix-derma/body-care" element={<BodyCare />} />
         <Route path="skin-concerns" element={<SkinConcernPage />} />
       </Route>
     </Routes>
