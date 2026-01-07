@@ -5,6 +5,7 @@ import FixdermaPage from "./pages/FixDermaPage";
 import FclPage from "./pages/FclPage";
 import AboutPage from "./pages/About";
 import FaceCare from "./pages/FaceCare";
+import SkinConcernPage from "./pages/SkinConcern";
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
         <Route path="/fix-derma" element={<FixdermaPage />} />
         <Route path="/fcl" element={<FclPage />} />
         <Route path="/about" element={<AboutPage />} />
-         <Route path="/fix-derma/face-care" element={<FaceCare />} />
+        <Route path="/fix-derma/face-care" element={<FaceCare />} />
+        <Route path="skin-concerns" element={<SkinConcernPage />} />
       </Route>
     </Routes>
   );

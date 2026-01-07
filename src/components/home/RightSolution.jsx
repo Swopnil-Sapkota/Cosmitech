@@ -2,19 +2,19 @@ import acne from "../../assets/home/Acne.png";
 import pigmentation from "../../assets/home/Pigmentation.png";
 import dry from "../../assets/home/DrySkin.png";
 import sensi from "../../assets/home/Sensi.png";
-import sun from "../../assets/home/sun.png";
 import aging from "../../assets/home/age.png";
+import sun from "../../assets/fixderma/facecare/sunscreen.png";
 
 const items = [
-    {
+    {    
         title: "Acne",
         image: acne,
-        imgClass: "w-10 h-10",
+        imgClass: "w-8 h-8",
     },
     {
         title: "Pigmentation",
         image: pigmentation,
-        imgClass: "w-10 h-10",
+        imgClass: "w-8 h-8",
     },
     {
         title: "Dry Skin",
@@ -29,7 +29,7 @@ const items = [
     {
         title: "Sun Protection",
         image: sun,
-        imgClass: "w-8 h-8",
+        imgClass: "w-10 h-10",
     },
     {
         title: "Aging",
