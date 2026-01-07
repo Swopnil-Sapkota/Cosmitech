@@ -6,7 +6,7 @@ import aging from "../../assets/home/age.png";
 import sun from "../../assets/fixderma/facecare/sunscreen.png";
 
 const items = [
-    {    
+    {
         title: "Acne",
         image: acne,
         imgClass: "w-8 h-8",
@@ -38,18 +38,26 @@ const items = [
     },
 ];
 
-export default function RightSolution() {
+export default function RightSolution({
+    showHeader = true,
+    showButton = false,
+    customTitle = "",
+    customSubtitle = "",
+    buttonText = "View All Concerns"
+}) {
     return (
-        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 ">
-            {/* Header */}
-            <div className="text-center mb-12">
-                <h2 className="text-2xl md:text-3xl font-normal text-gray-900">
-                    Find the Right Solution for Your Skin
-                </h2>
-                <p className="mt-2 text-sm md:text-base text-gray-500">
-                    Targeted treatments for common skin concerns
-                </p>
-            </div>
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 ">
+            {/* Conditionally render header */}
+            {showHeader && (
+                <div className="text-center mb-12">
+                    <h2 className="text-2xl md:text-3xl font-normal text-gray-900">
+                        {customTitle || "Find the Right Solution for Your Skin"}
+                    </h2>
+                    <p className="mt-2 text-sm md:text-base text-gray-500">
+                        {customSubtitle || "Targeted treatments for common skin concerns"}
+                    </p>
+                </div>
+            )}
 
             {/* Grid */}
             <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -71,6 +79,15 @@ export default function RightSolution() {
                     </div>
                 ))}
             </div>
+
+            {/* Conditionally render button */}
+            {showButton && (
+                <div className="text-center mt-12">
+                    <button className="bg-[#FE9A9B] hover:bg-[#FD7A7B] text-white px-8 py-3 rounded-lg font-medium transition-all duration-300 hover:scale-105 active:scale-95 shadow-md hover:shadow-lg">
+                        {buttonText}
+                    </button>
+                </div>
+            )}
         </section>
     );
 }
